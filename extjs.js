@@ -26,3 +26,18 @@ var smGridq = new Ext.grid.CellSelectionModel({
 			}
 		}
 	});
+/* llamado antiguo */
+//Namespace defined in Global scope
+var myApp = {};
+
+Ext.onReady(function(){ 
+  //Some stuff... 
+
+  myApp.addTab_inside = function(closeable, tabtitle, targetUrl){
+    //do work
+  }
+});
+
+function addTab_Outside(){
+  myApp.addTab_inside(true, 'Test', 'test.php');
+}
